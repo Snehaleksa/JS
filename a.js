@@ -41,3 +41,8 @@ function firstLetter(){
 }
 firstLetter(str)
 
+function append(value){
+    console.log(value + "!!!");
+    
+}
+append(str)
