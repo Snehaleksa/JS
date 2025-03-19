@@ -8,7 +8,7 @@ formatSring("Hello World! JS is Fun ")
 
 
 function removeVowels(value){
-    console.log(value.replaceAll('a','').toUpperCase().concat ("!!!"));
+    console.log(value.replaceAll(/[aeiouAEIOU]/g,'').toUpperCase().concat ("!!!"));
     
 }
 removeVowels("javascript is amazing")
