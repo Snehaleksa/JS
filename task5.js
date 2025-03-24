@@ -12,4 +12,6 @@ console.log(products.filter(item => item.band=='5g').map(item => item.pName));
 console.log(products.filter(item=>item.price<50000 ));
 
 
+console.log(products.reduce((max,item) => item.price > max.price ? item :max,products[0]));
+console.log(products.reduce((max,item) => item.price > max.price ? item :max,products[0]));
 
