@@ -16,7 +16,7 @@ const data =[
     },
 ]
 
- console.log(data.filter(item => item.category == "Electronics"));
+console.log(data.filter(item => item.category == "Electronics"));
 console.log(data.filter(item => item.category == "Electronics").map(item =>item.name.toUpperCase()));
 console.log(data.filter(item => item.category == "Electronics").reduce((sum, item) => sum + item.price, 0));
 console.log(data.filter(item => item.price > 500 ).map(item => item.name));
