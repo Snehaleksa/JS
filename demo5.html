@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+            
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(37, 36, 36);
+            
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type=text]{
+            padding: 20px 30px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <div>
+          <tr class="text">
+              <td colspan="4">
+                  <input type="text" id="result" >
+              </td>
+          </tr>
+          <tr>
+              <td><button onclick="appendValue('1')" >1</button></td>
+              <td><button onclick="appendValue('2')" >2</button></td>
+              <td><button onclick="appendValue('3')">3</button></td>
+              <td><button onclick="appendValue('+')">+</button></td>
+          </tr>
+          <tr>
+              <td><button onclick="appendValue('4')">4</button></td>
+              <td><button onclick="appendValue('5')">5</button></td>
+              <td><button onclick="appendValue('6')">6</button></td>
+              <td><button onclick="appendValue('-')">-</button></td>
+
+          </tr>
+          <tr>
+              <td><button onclick="appendValue('7')">7</button></td>
+              <td><button onclick="appendValue('8')">8</button></td>
+              <td><button onclick="appendValue('9')">9</button></td>
+              <td><button onclick="appendValue('*')">*</button></td>
+            
+          </tr>
+          <tr>
+              <td><button onclick="appendValue('0')">0</button></td>
+              <td><button onclick="appendValue('.')">.</button></td>
+              <td><button onclick="appendValue('/')">/</button></td>
+              <td><button onclick="appendValue('=')">=</button></td>
+            
+            
+          </tr>
+        </div>  
+        
+    </table>
+    <script>
+      function appendValue(value) {
+         document.getElementById("result").value += value;
+      }
+      
+    </script>
+    
+</body>
+</html>
