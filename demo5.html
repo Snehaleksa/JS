@@ -66,7 +66,7 @@
               <td><button onclick="appendValue('0')">0</button></td>
               <td><button onclick="appendValue('.')">.</button></td>
               <td><button onclick="appendValue('/')">/</button></td>
-              <td><button onclick="appendValue('=')">=</button></td>
+              <td><button onclick="calculate()">=</button></td>
             
             
           </tr>
@@ -77,6 +77,13 @@
       function appendValue(value) {
          document.getElementById("result").value += value;
       }
+      function calculate() {
+       const expression = document.getElementById("result").value;
+       const result = eval(expression);
+       document.getElementById("result").value = result;
+}
+
+      
       
     </script>
     
